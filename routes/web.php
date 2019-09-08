@@ -18,3 +18,12 @@ Route::get('/', function () {
 Route:: get('/contact', function(){
 	return view('contact');
 });
+
+
+Route:: get('/display', function(){
+	return view('display', [
+		'tasks' 	=> ['go to word', 'go to shop'],
+		'foo' 		=> '<script>alert("foobar")</script>' 
+	
+	]);
+});

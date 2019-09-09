@@ -19,6 +19,7 @@ Route:: get('/contact', function(){
 	return view('contact');
 });
 
+Route::get('display', 'displayController@index');
 
 Route:: get('/display', function(){
 	return view('display', [

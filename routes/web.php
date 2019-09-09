@@ -30,3 +30,7 @@ Route:: get('/display', function(){
 });
 
 Route::get('/projects', 'projectsController@index');
+
+Route::get('/projects/create', 'projectsController@create');
+
+Route::post('/projects', 'projectsController@store');

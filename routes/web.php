@@ -28,3 +28,5 @@ Route:: get('/display', function(){
 	
 	]);
 });
+
+Route::get('/projects', 'projectsController@index');
